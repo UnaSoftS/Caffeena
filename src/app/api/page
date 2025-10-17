@@ -1,0 +1,35 @@
+// type articale={
+
+//     id: number
+//     title:'String'
+//     date: number
+//     category: string
+//     author: 'String'
+// }
+
+// export default async function Menu() {
+//     //تاخير الكود عشر ثواني
+//     await new Promise ((resolve)=>setTimeout(resolve,1000));
+
+
+//     const response = await fetch("https://api.vercel.app/blog",
+//         // 
+//         // {cache:'no-store'},
+//         //معنى هذا ان ارسل لل api  كل خمسين ثانية يسوي رفرش للصفحة 
+//         {next :{revalidate:50}}
+//     );
+//     if(!response.ok)
+//     {
+//         throw new Error("we have new error")
+//     }
+//        const data: articale[] = await response.json();
+//     return (
+//         <section>
+//             {data.map(item=><h1  className="text-[#c69a35]" key={item.id}>{item.category} ,</h1>)}
+//             {data.map(item=><h3 className="text-[#372805]" key={item.id}>{item.author}</h3>)}
+//         </section>
+
+//     );
+// }
+
+
